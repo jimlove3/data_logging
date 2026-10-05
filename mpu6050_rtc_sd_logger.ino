@@ -20,6 +20,8 @@
 #define SD_CS_PIN 10
 #define LOG_FILENAME "datalog.csv"
 
+#define MPU_ADDR 0x69          // AD0 pulled HIGH. Use 0x68 if AD0 is low (conflicts with DS3231).
+
 Adafruit_MPU6050 mpu;
 RTC_DS3231 rtc;
 
